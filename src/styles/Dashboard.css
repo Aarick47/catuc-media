@@ -1,0 +1,44 @@
+.banner {
+  position: relative;
+  height: 320px; /* increased height from 240px */
+  width: 100%;
+  max-width: 100%;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #fbbf24 100%);
+  border-radius: 20px;
+  margin-bottom: 24px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden; /* prevents elements from expanding page */
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
+  box-sizing: border-box;
+}
+
+/* Circles and floating cards */
+.circle1, .circle2, .circle3,
+.floating-card1, .floating-card2, .floating-card3 {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .banner {
+    padding: 20px;
+    height: 280px; /* increased height for small screens */
+  }
+
+  .circle1 { width: 220px; height: 220px; top: -100px; right: -50px; }
+  .circle2 { width: 170px; height: 170px; bottom: -50px; right: 70px; }
+  .circle3 { width: 120px; height: 120px; top: 40px; left: 120px; }
+
+  .floating-card1 { width: 70px; height: 70px; top: -40px; right: 0; }
+  .floating-card2 { width: 60px; height: 60px; top: 50px; right: 90px; }
+  .floating-card3 { width: 50px; height: 50px; top: 0; right: 130px; }
+
+  .title { font-size: 36px; }
+  .subtitle { font-size: 16px; }
+}

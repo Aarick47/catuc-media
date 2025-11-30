@@ -1,0 +1,46 @@
+.dashboard-layout {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f5f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-body {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+.sidebar-left {
+  width: 17%;
+  background: #ffffff;
+  border-right: 1px solid #e3e4e6;
+}
+
+.dashboard-content {
+  width: 56%;
+  padding: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling */
+
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
+
+  /* Hide scrollbar for Internet Explorer and old Edge */
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari, Edge (Blink) */
+.dashboard-content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+.sidebar-right {
+  width: 27%;
+  background: #ffffff;
+  border-left: 1px solid #e3e4e6;
+  padding: 16px;
+}
